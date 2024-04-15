@@ -1,5 +1,8 @@
 # Task-Management-System
 
+# Autor
+Felipe Alencar Silva Santos
+
 # Descrição sobre o que foi desenvolvido
 Foi criado um simples sistema de gerenciamento de tarefas. Quanto ao back-end, este foi desenvolvido com o auxílio do Spring Boot e do Java, além de ter sido conectado a uma base de dados por meio do SGBD PostgreSQL e de ser constituído por endpoints REST que possibilitam que sejam executadas operações de cadastro, atualização, listagem e remoção de tarefas, as quais possuem um título, uma descrição, um responsável, um nível de prioridade, uma data limite para a sua realização e um grau de situação (em andamento ou finalizada). No que diz respeito ao front-end, este foi produzido com a ajuda do Angular, HTML, CSS e TypeScript. Além disso, possui os seguintes componentes, os quais possibilitam que os comportamentos especificados no back-end sejam executados de modo graficamente atrativo: Página Inicial, Página de Cadastro e Página de Gestão de Tarefas.
 
