@@ -1,0 +1,60 @@
+<div class="container">
+  <h1>Gerenciamento de Tarefas</h1>
+  <form id="task-form">
+    <div class="form-group">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" name="numero" [(ngModel)]="titulo">
+    </div>
+    <div class="form-group">
+      <label for="situacao">Situação:</label>
+      <select id="situacao" name="situacao" [(ngModel)]="situacao">
+        <option value="">Selecione</option>
+        <option value="Pendente">Pendente</option>
+        <option value="Concluída">Concluída</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="responsavel">Responsável:</label>
+      <input type="text" id="responsavel" name="responsavel" [(ngModel)]="responsavel">
+    </div>
+    <button type="submit" (click)="listarTarefas()">Filtrar</button>
+  </form>
+
+  <h2>Lista de Tarefas</h2>
+  <table id="task-table">
+    <thead>
+    <tr>
+      <th>Número</th>
+      <th>Título</th>
+      <th>Descrição</th>
+      <th>Responsável</th>
+      <th>Prioridade</th>
+      <th>Prazo</th>
+      <th>Situação</th>
+      <th>Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tarefa of tarefasFiltradas">
+      <td>{{ tarefas.indexOf(tarefa)+1 }}</td>
+      <td>{{ tarefa.titulo }}</td>
+      <td>{{ tarefa.descricao }}</td>
+      <td>{{ tarefa.responsavel }}</td>
+      <td>{{ tarefa.prioridade }}</td>
+      <td>{{ tarefa.deadline | date: 'dd/MM/yyyy' }}</td>
+      <td>{{tarefa.situacao}}</td>
+      <td>
+        <button class="edit" (click)="redirecionar(tarefa)">Editar</button>
+        <button class="complete" (click)="concluirTarefa(tarefa)">Mudar Status</button>
+        <button class="delete" (click)="excluirTarefa(tarefa.id!)">Excluir</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
