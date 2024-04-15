@@ -11,7 +11,7 @@ e) Utilizar persistência em um banco de dados PostgreSQL e persistência JPA;
 f) Utilizar testes de unidades;
 g) Documentar a API usando o Swagger (https://swagger.io).
 
-# Passos destinado a execuções em ambientes locais
+# Passos destinados a execuções em ambientes locais
 1) Download do repositório;
 2) Criação de base de dados via PostgreSQL e com o nome "SGT", a qual será conectada ao back-end (via porta 5432) e gerenciada automaticamente por meio do próprio back-end;
 3) Execução do back-end em IDE, disponível na pasta "SGT" -  a porta definida é a 8080;
