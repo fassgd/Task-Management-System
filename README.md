@@ -18,7 +18,7 @@ g) Documentar a API usando o Swagger (https://swagger.io).
 1) Download do repositório;
 2) Criação de base de dados via PostgreSQL e com o nome "SGT", a qual será conectada ao back-end (via porta 5432) e gerenciada automaticamente por meio do próprio back-end;
 3) Execução do back-end em IDE, disponível na pasta "SGT" -  a porta definida é a 8080;
-4) Execução do front-end em IDE, disponível na pasta "SGTF - a porta definida é a 4200".
+4) Execução do front-end em IDE, disponível na pasta "SGTF" - a porta definida é a 4200.
 5) Abertura do sistema em navegador por intermédio da porta 4200.
 OBSERVAÇÃO:
 6) A documentação gerada por meio do Swagger pode ser acessada em ambiente local através do link: http://localhost:8080/swagger-ui/index.html#
